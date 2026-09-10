@@ -38,3 +38,21 @@ INNER JOIN dbo.OrderItems AS oi
     ON o.OrderID = oi.OrderID
 INNER JOIN dbo.Products AS p
     ON oi.ProductID = p.ProductID;
+
+-- Revenue by category
+SELECT
+	p.Category,
+	SUM(oi.Quantity * oi.UnitPrice) AS Revenue
+FROM dbo.OrderItems AS oi
+INNER JOIN dbo.Products AS p
+on oi.ProductID = p.ProductID
+GROUP BY p.Category
+ORDER BY Revenue DESC;
+
+-- finding total revenue only for completed orders
+SELECT
+    SUM(oi.Quantity * oi.UnitPrice) AS CompletedRevenue
+FROM dbo.Orders AS o
+INNER JOIN dbo.OrderItems AS oi
+    ON o.OrderID = oi.OrderID
+WHERE o.OrderStatus = 'Completed';
