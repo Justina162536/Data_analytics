@@ -40,3 +40,34 @@ group by
     c.LastName
 order by CompletedRevenue desc;
 
+-- Replaces NULL revenue values with 0 for customers without orders
+select
+    concat(c.FirstName, ' ', c.LastName) as CustomerName,
+    coalesce(sum(oi.Quantity*oi.UnitPrice),0) as TotalRevenue 
+from dbo.Customers as c
+left join dbo.Orders as o
+    on c.CustomerID = o.CustomerID
+left join dbo.OrderItems as oi
+    on o.OrderID = oi.OrderID
+group by 
+    c.CustomerID,
+    c.FirstName,
+    c.LastName
+order by TotalRevenue desc;
+
+-- Identifies customers with no completed orders
+select
+    concat(c.FirstName, ' ', c.LastName) as CustomerName
+from dbo.Customers as c
+left join dbo.Orders as o
+    on c.CustomerID = o.CustomerID
+group by
+    c.CustomerID,
+    c.FirstName,
+    c.LastName
+having sum(
+    case
+        when o.OrderStatus = 'Completed' then 1
+        else 0
+    end
+) = 0;
