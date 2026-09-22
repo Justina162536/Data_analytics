@@ -57,3 +57,15 @@ My practical data analytics learning journey.
 - Segmented customers by total completed-order revenue
 - Practiced customer value segmentation into Low, Medium, and High Value groups
 - Improved query structure, formatting, aliases, and analytical SQL logic
+
+- ## Day 4
+
+- Practiced `left join` to keep all records from the left table
+- Identified customers with no matching orders
+- Practiced finding unmatched records using `is null`
+- Calculated order counts while keeping customers with zero orders
+- Calculated completed-order revenue while preserving customers with no completed orders
+- Practiced conditional aggregation with `sum(case when ...)`
+- Used `coalesce()` to replace `null` values with `0`
+- Calculated total revenue for all customers, including customers with no purchases
+- Identified customers with no completed orders using `having` and conditional aggregation
