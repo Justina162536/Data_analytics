@@ -58,7 +58,7 @@ My practical data analytics learning journey.
 - Practiced customer value segmentation into Low, Medium, and High Value groups
 - Improved query structure, formatting, aliases, and analytical SQL logic
 
-- ## Day 4
+ ## Day 4
 
 - Practiced `left join` to keep all records from the left table
 - Identified customers with no matching orders
@@ -69,3 +69,15 @@ My practical data analytics learning journey.
 - Used `coalesce()` to replace `null` values with `0`
 - Calculated total revenue for all customers, including customers with no purchases
 - Identified customers with no completed orders using `having` and conditional aggregation
+
+ ## Day 5
+
+- Identified products priced above the average product price
+- Used `in` with a subquery to find customers with completed orders
+- Used `not exists` to identify customers with no completed orders
+- Used subqueries inside the `select` clause
+- Compared individual product prices with the overall average product price
+- Calculated average revenue across products
+- Identified products with completed-order revenue above the average product revenue
+- Combined subqueries with `join`, `sum`, `avg`, `group by`, `having`, and `order by`
+- Improved understanding of when a subquery returns a single value, a list of values, or a temporary result 
