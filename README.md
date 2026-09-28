@@ -70,7 +70,7 @@ My practical data analytics learning journey.
 - Calculated total revenue for all customers, including customers with no purchases
 - Identified customers with no completed orders using `having` and conditional aggregation
 
- ## Day 5
+## Day 5
 
 - Identified products priced above the average product price
 - Used `in` with a subquery to find customers with completed orders
@@ -80,9 +80,9 @@ My practical data analytics learning journey.
 - Calculated average revenue across products
 - Identified products with completed-order revenue above the average product revenue
 - Combined subqueries with `join`, `sum`, `avg`, `group by`, `having`, and `order by`
-- Improved understanding of when a subquery returns a single value, a list of values, or a temporary result
+- Improved understanding of when a subquery returns a single value, a list of values, or a temporary result set
 
-  ## Day 6
+## Day 6
 
 - Learned the basics of Common Table Expressions (CTEs)
 - Rewrote subquery logic using CTEs
@@ -90,7 +90,9 @@ My practical data analytics learning journey.
 - Calculated product and customer revenue with CTEs
 - Compared individual values with overall averages
 - Segmented customers by completed-order revenue
-- Analyzed country and product category performance
-- Combined CTEs with `join`, `case`, `sum`, `avg`, `group by`, and `order by`
-- Calculated customer revenue share as a percentage of total revenue
-- Improved query readability by splitting complex logic into separate CTE steps
+- Identified customers with revenue above the customer average
+- Analyzed completed and cancelled performance by country
+- Analyzed product category revenue and sales volume
+- Calculated each customer's share of total completed revenue
+- Combined CTEs with `join`, `left join`, `cross join`, `case`, `sum`, `avg`, `group by`, and `order by`
+- Improved complex query readability by separating calculations into logical CTE steps
