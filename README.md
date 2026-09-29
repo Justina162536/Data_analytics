@@ -96,3 +96,15 @@ My practical data analytics learning journey.
 - Calculated each customer's share of total completed revenue
 - Combined CTEs with `join`, `left join`, `cross join`, `case`, `sum`, `avg`, `group by`, and `order by`
 - Improved complex query readability by separating calculations into logical CTE steps
+
+  ## Day 7
+
+- Practiced working with dates using `year()`, `month()`, `datename()`, `datediff()`, and `eomonth()`
+- Calculated the time between customer registration and order dates
+- Cleaned text data using `trim()`, `upper()`, and `lower()`
+- Identified missing or empty email values
+- Used `nullif()` and `case` for data quality checks
+- Improved understanding of basic data cleaning and validation in SQL Server
+- Created reusable SQL views for sales and customer analysis
+- Learned the difference between clustered and nonclustered indexes
+- Created nonclustered indexes for commonly used join and filter columns
