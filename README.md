@@ -71,7 +71,6 @@ My practical data analytics learning journey.
 - Identified customers with no completed orders using `having` and conditional aggregation
 
 ## Day 5
-
 - Identified products priced above the average product price
 - Used `in` with a subquery to find customers with completed orders
 - Used `not exists` to identify customers with no completed orders
@@ -81,9 +80,7 @@ My practical data analytics learning journey.
 - Identified products with completed-order revenue above the average product revenue
 - Combined subqueries with `join`, `sum`, `avg`, `group by`, `having`, and `order by`
 - Improved understanding of when a subquery returns a single value, a list of values, or a temporary result set
-
 ## Day 6
-
 - Learned the basics of Common Table Expressions (CTEs)
 - Rewrote subquery logic using CTEs
 - Used single and multiple CTEs in one query
@@ -96,9 +93,7 @@ My practical data analytics learning journey.
 - Calculated each customer's share of total completed revenue
 - Combined CTEs with `join`, `left join`, `cross join`, `case`, `sum`, `avg`, `group by`, and `order by`
 - Improved complex query readability by separating calculations into logical CTE steps
-
-  ## Day 7
-
+## Day 7
 - Practiced working with dates using `year()`, `month()`, `datename()`, `datediff()`, and `eomonth()`
 - Calculated the time between customer registration and order dates
 - Cleaned text data using `trim()`, `upper()`, and `lower()`
@@ -108,3 +103,8 @@ My practical data analytics learning journey.
 - Created reusable SQL views for sales and customer analysis
 - Learned the difference between clustered and nonclustered indexes
 - Created nonclustered indexes for commonly used join and filter columns
+- Created staging tables for raw imported data
+- Identified missing values using `nullif()` and `trim()`
+- Detected duplicate records using `group by` and `having`
+- Validated data types using `try_convert()`
+- Created a simple data quality summary for missing and invalid values
