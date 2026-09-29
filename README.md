@@ -105,3 +105,6 @@ My practical data analytics learning journey.
 - Identified missing or empty email values
 - Used `nullif()` and `case` for data quality checks
 - Improved understanding of basic data cleaning and validation in SQL Server
+- Created reusable SQL views for sales and customer analysis
+- Learned the difference between clustered and nonclustered indexes
+- Created nonclustered indexes for commonly used join and filter columns
