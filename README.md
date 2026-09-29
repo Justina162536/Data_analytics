@@ -20,7 +20,7 @@ My practical data analytics learning journey.
 
 ## Progress
 
-### Day 1
+## Day 1
 - Installed SQL Server and SSMS
 - Created first SQL Server database
 - Created relational tables
